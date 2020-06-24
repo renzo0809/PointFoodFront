@@ -1,0 +1,31 @@
+
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <a routerLink="/" style="padding-left:0px"><img
+    width="40"
+    alt="PointFood Logo"
+    src="../assets/img/Logo.png"/></a>
+
+  <div  *ngIf="!userService.getUser().logged"  >
+    <button routerLink="/login" class="button" style="margin-left:940px;">Ingresar</button>
+  </div>
+  <div *ngIf="userService.getUser().logged">
+    <ul class="nav" >
+      <li><a routerLink="/favoritos">Favoritos</a></li>
+      <li><a routerLink="/">Mis Ordenes</a></li>
+    </ul>
+
+   <a href=""
+      style="padding-left:60px !important; margin-top: 10px;">
+    <img width="40"
+    src="../assets/img/user.png"
+    alt="user icon" style="padding-top: 20px;">
+   </a>
+  </div>
+
+
+
+</div>
+<div class="spacer"></div>
+<router-outlet></router-outlet>
