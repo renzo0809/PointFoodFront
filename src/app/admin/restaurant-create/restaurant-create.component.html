@@ -1,23 +1,28 @@
 <div class="container">
-  <form>
+  <form [formGroup]="restaurantForm" (ngSubmit)="createRestaurant(restaurantForm.value)">
     <div>
       <label for="name">Nombre:</label>
-      <input type="text" id="name">
+      <input type="text" formControlName="name" id="name">
     </div>
     <br>
     <div>
       <label for="address">Dirección:</label>
-      <input type="text" id="address">
+      <input type="text" formControlName="address" id="address">
     </div>
     <br>
     <div>
       <label for="phone">Número:</label>
-      <input type="text" id="phone">
+      <input type="text" formControlName="phone" id="phone">
     </div>
     <br>
     <div>
-      <label for="owner">Dueño:</label>
-      <input type="text" id="owner">
+      <label for="restaurantOwner">Dueño (id):</label>
+      <input type="number" formControlName="restaurantOwner" id="restaurantOwner">
+    </div>
+    <br>
+    <div>
+      <label for="punctuation">Puntuación:</label>
+      <input type="number" formControlName="punctuation" id="punctuation">
     </div>
     <br><br>
     <div>

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient,HttpHeaders } from "@angular/common/http";
 import { EnvironmentUrlService } from './environment-url.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ClientService {
+export class RestaurantService {
 
   constructor(private http:HttpClient, private envUrl: EnvironmentUrlService) { }
 

@@ -1,10 +1,10 @@
 export class Restaurant{
   id?:number;
   name:string;
-  adress:string;
+  address:string;
   phone:string;
   restaurantOwner:number;
-  punctuaction?:number;
+  punctuation?:number;
   img?:string;
 
 }
