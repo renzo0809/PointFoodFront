@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
-import { User } from './user';
+import { UserLogIn } from './_model/user';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-user:User={logged:false};
+
+user:UserLogIn={logged:false};
 
 constructor() { }
-getUser():User
+getUser():UserLogIn
 {
   return this.user;
 }

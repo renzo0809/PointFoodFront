@@ -1,0 +1,18 @@
+<div class="banner">
+  <h1>Iniciar Sesión</h1>
+  <form  style="text-align:left;">
+    <label for="">Usuario: <br>
+      <input id="Nombre" type="text" >
+    </label>
+
+    <label for="">Contraseña: <br>
+      <input id="Nombre" type="password" >
+    </label>
+    <!--[routerLink]="['/user/dashboard']" -->
+      <button [routerLink]="['/user/dashboard']" routerLinkActive="router-link-active"  class="submit" type="button "  style="margin-left:0px !important;margin-top: 20px;" (click)="ingresar()">Iniciar Sesion</button>
+
+  </form>
+</div>
+
+
+<img src="../../assets/img/portada.png" alt="">

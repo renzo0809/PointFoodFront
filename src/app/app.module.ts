@@ -4,25 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PortadaComponent } from './portada/portada.component';
-import { LogInComponent } from './log-in/log-in.component';
-import { FavoritosComponent } from './favoritos/favoritos.component';
-import { RegisterComponent } from './register/register.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { RestaurantComponent } from './restaurant/restaurant.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortadaComponent,
-    LogInComponent,
-    FavoritosComponent,
-    RegisterComponent,
-    DashboardComponent,
-    RestaurantComponent
+    PortadaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,41 @@
+
+<div class="container">
+  <h3>Restaurantes</h3>
+  <div class="row" style="height: 400px;">
+    <div class="card col-3"
+    *ngFor="let restaurant of restaurantService.getRestaurants().slice(1,4)"
+    style="height: 350px;">
+      <!--[routerLink]="['/user/dashboard',restaurant.name]"-->
+      <a>
+        <img src="{{restaurant.img}}" alt="" height="200px" width="200px">
+      </a>
+      <h4>{{restaurant.name}}</h4>
+      <h4>Valoración: {{restaurant.punctuaction}}</h4>
+    </div>
+    <a href="#" style="width: 22.5% !important;">
+      <div class="card col-3 " style="width:100% !important;height: 350px;text-align: center; align-items: center;">
+        <p style="padding-top: 150px;">Ver más...</p>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="row" style="height: 400px;">
+    <div class="card col-3"
+    *ngFor="let restaurant of restaurantService.getRestaurants().slice(1,4)"
+    style="height: 350px;">
+    <a >
+      <img src="{{restaurant.img}}" alt="" height="200px" width="200px">
+    </a>
+      <h4>{{restaurant.name}}</h4>
+      <h4>Valoración: {{restaurant.punctuaction}}</h4>
+    </div>
+    <a href="#" style="width: 22.5% !important;">
+      <div class="card col-3 " style="width:100% !important;height: 350px;text-align: center; align-items: center;">
+        <p style="padding-top: 150px;">Ver más...</p>
+      </div>
+    </a>
+
+  </div>
+</div>
+

@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { User } from './user';
 import { UserService } from './user.service';
-import { UseExistingWebDriver } from 'protractor/built/driverProviders';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +12,6 @@ export class AppComponent {
   {
 
   }
-
 
   ngOnInit():void{
   }

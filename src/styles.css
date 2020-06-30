@@ -70,3 +70,6 @@ label{
   border-radius: 4px;
   transition:all 0.4s;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

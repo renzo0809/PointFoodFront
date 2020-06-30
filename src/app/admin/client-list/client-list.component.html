@@ -1,0 +1,23 @@
+
+<div class="container">
+<!--Nombre, usuario, correo, numero,-->
+<table>
+   <thead>
+     <tr>
+       <th>Nombre</th>
+       <th>Usuario</th>
+       <th>Correo</th>
+       <th>Número</th>
+     </tr>
+   </thead>
+   <tbody>
+      <tr  *ngFor="let client of clients">
+        <td>{{client.name}}</td>
+        <td>{{client.username}}</td>
+        <td>{{client.email}}</td>
+        <td>{{client.phone}}</td>
+      </tr>
+
+   </tbody>
+</table>
+</div>

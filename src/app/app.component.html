@@ -8,11 +8,12 @@
     src="../assets/img/Logo.png"/></a>
 
   <div  *ngIf="!userService.getUser().logged"  >
-    <button routerLink="/login" class="button" style="margin-left:940px;">Ingresar</button>
+    <button routerLink="/admin/login" class="button" style="margin-left:750px;">Administrador</button>
+    <button routerLink="/user/login" class="button" style="margin-left:40px;">Ingresar</button>
   </div>
   <div *ngIf="userService.getUser().logged">
     <ul class="nav" >
-      <li><a routerLink="/favoritos">Favoritos</a></li>
+      <li><a routerLink="user/favoritos">Favoritos</a></li>
       <li><a routerLink="/">Mis Ordenes</a></li>
     </ul>
 
