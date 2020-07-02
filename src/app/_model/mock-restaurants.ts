@@ -2,16 +2,16 @@ import { Restaurant } from './restaurant';
 export const Restaurants:Restaurant[]=[
   {
     name:'El buen sabor',
-    adress:'Salaverry 123',
-    punctuaction:4.5,
+    address:'Salaverry 123',
+    punctuation:4.5,
     img: "../../assets/img/restaurantes/imagen1.jpg",
     phone:'455633236',
     restaurantOwner:2,
   },
   {
     name:'El puntito',
-    adress:'Salaverry 1460',
-    punctuaction:2.0,
+    address:'Salaverry 1460',
+    punctuation:2.0,
     img: "../../assets/img/restaurantes/imagen1.jpg",
     phone:'455633236',
     restaurantOwner:2,
@@ -19,8 +19,8 @@ export const Restaurants:Restaurant[]=[
 
   {
     name:"Manolo's",
-    adress:'Av. Larco 574',
-    punctuaction:5,
+    address:'Av. Larco 574',
+    punctuation:5,
     img: "../../assets/img/restaurantes/imagen2.jpg",
     phone:'455633236',
     restaurantOwner:2,
@@ -28,8 +28,8 @@ export const Restaurants:Restaurant[]=[
 
   {
     name:'La Bistecca',
-    adress:'Av. Jose Pardo 234',
-    punctuaction:3.0,
+    address:'Av. Jose Pardo 234',
+    punctuation:3.0,
     img: "../../assets/img/restaurantes/imagen3.jpg",
     phone:'455633236',
     restaurantOwner:2,
@@ -37,8 +37,8 @@ export const Restaurants:Restaurant[]=[
 
   {
     name:'Long Horn',
-    adress:'Av. Republica de Panamá 2020',
-    punctuaction:4.0,
+    address:'Av. Republica de Panamá 2020',
+    punctuation:4.0,
     img: "../../assets/img/restaurantes/imagen4.jpg",
     phone:'455633236',
     restaurantOwner:2,

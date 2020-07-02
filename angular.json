@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "PointFoodSPA"
+  "defaultProject": "PointFoodSPA",
+  "cli": {
+    "analytics": "79e74466-c662-49f1-a5f1-9767740063b7"
+  }
 }
